@@ -37,5 +37,34 @@ wikipedia-scraper/
     ├── api_client.py
     └── html_scraper.py
 
-    
+## 🧩 Modules
+
+src/api_client.py
+
+Handles all API communication:
+
+Fetch countries
+Fetch leaders per country
+Manage session cookies
+Handle API errors gracefully
+src/html_scraper.py
+
+Handles all scraping logic:
+
+Download HTML pages
+Parse Wikipedia content
+Extract first meaningful paragraph
+Clean extracted text
+
+
+This project follows Git Flow best practices:
+
+main → production-ready code
+feature/api-client → API module development
+feature/html-scraper → scraping module development
+feature/integration → final orchestration
+
+## 🧑‍💻 Authors
+Neha – API module & integration
+Irene – Scraper module & parsing logic
 
