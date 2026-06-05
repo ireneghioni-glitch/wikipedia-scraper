@@ -19,8 +19,8 @@ class CountryLeadersAPI:
            response = self.session.get(self.cookies_endpoint) # This will create the cookie
            response.raise_for_status()      #This will stop the program instantly if the API gives an error 
           
-           cookie_value = response.json()["cookie"] # This will retreive the cookie value
-           self.cookies = {"session": cookie_value}           # Stores the cookie
+           #cookie_value = response.json()["cookie"] # This will retreive the cookie value
+           #self.cookies = {"session": cookie_value}           # Stores the cookie
 
         except requests.exceptions.RequestException as e:
              print(f"[ERROR] Failed to refresh cookie: {e}")

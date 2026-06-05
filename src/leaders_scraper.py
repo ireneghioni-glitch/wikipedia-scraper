@@ -1,4 +1,6 @@
 import requests
+import re
+from bs4 import BeautifulSoup
 
 
 class WikipediaScraper:
@@ -14,7 +16,7 @@ class WikipediaScraper:
         re.compile(r"\s+"): " "
     }
 
-    def __init__(self, session:Sesion):
+    def __init__(self, session:requests.Session):
         self.session = session
         self.scraped_data = []
 
